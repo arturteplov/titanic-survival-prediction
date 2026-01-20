@@ -1,26 +1,37 @@
 # Titanic Survival Prediction
 
-This project predicts whether a passenger survived the Titanic disaster
-using a Logistic Regression model.
+Predict Titanic passenger survival using **Logistic Regression** and **Random Forest**.
+
+---
 
 ## Dataset
-- Source: Kaggle Titanic Dataset
-- Rows: 891 passengers
-- Target variable: Survived (0 = No, 1 = Yes)
+- Kaggle Titanic dataset
+- Target: `Survived` (0 = no, 1 = yes)
+- Features: `Pclass`, `Sex`, `Age`, `SibSp`, `Parch`, `Fare`, `Embarked`
 
-## Features Used
-- Pclass
-- Sex
-- Age
-- Fare
+---
 
-## Model
-- Logistic Regression (Scikit-learn)
+## Models
 
-## Results
-The model outputs both:
-- Binary survival predictions
-- Survival probabilities
+1. **Logistic Regression**
+   - Simple baseline
+   - Linear relationships
+   - Accuracy: ~79%
 
-## Notebook
-- Kaggle version: (add your Kaggle link here)
+2. **Random Forest**
+   - Captures non-linear patterns
+   - Feature importance:
+     - Sex → most important (females survived more)
+     - Fare, Age → moderately important
+   - Accuracy: ~83%
+
+---
+
+## How to Run
+1. Open the notebook `titanic_logistic_rf.ipynb`  
+2. Run all cells in Jupyter or Kaggle  
+
+---
+
+## Key Takeaway
+Random Forest outperforms Logistic Regression and highlights the most important survival factors.
