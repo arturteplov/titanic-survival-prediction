@@ -28,8 +28,10 @@ Predict Titanic passenger survival using **Logistic Regression** and **Random Fo
 ---
 
 ## How to Run
-1. Open the notebook `titanic_logistic_rf.ipynb`  
-2. Run all cells in Jupyter or Kaggle  
+1. Open the notebook `titanic-survival-prediction.ipynb` for Logistic Regression.
+2. Open the notebook `random-forest-classifier.ipynb` for Random Forest.
+3. Run all cells in Jupyter or Kaggle.
+  
 
 ---
 
